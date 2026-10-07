@@ -1,5 +1,17 @@
 User interface developed in React with Vite. Implements a login screen connected to Keycloak, authentication state management (AuthContext), automatic JWT token injection through Axios interceptors (with visible console logs), and screens for viewing and creating books.
 
+This repository is part of a complete project that requires the following repositories:
+
+frontend: https://github.com/Guille-NaVa01/cybersecurity-books-frontend.git
+
+backend: https://github.com/Guille-NaVa01/cybersecurity-books-api.git
+
+auth : https://github.com/Guille-NaVa01/cybersecurity-identity-auth-lab.git
+
+ddos : https://github.com/Guille-NaVa01/cybersecurity-ddos-load-tester.git
+
+To run the complete project, you must download/clone all three repositories.
+
 # Frontend Dashboard — BookVault
 
 App React (Vite) con autenticación completa vía LDAP + Keycloak OAuth2/OIDC.
