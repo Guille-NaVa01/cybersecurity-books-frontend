@@ -40,12 +40,6 @@ export function AuthProvider({ children }) {
 
       const { access_token } = response.data;
 
-      console.log(
-        '%c[JWT Received from Keycloak]',
-        'background:#7c3aed;color:#fff;font-weight:bold;padding:2px 6px;border-radius:4px',
-        { token: access_token.substring(0, 60) + '…' }
-      );
-
       localStorage.setItem('access_token', access_token);
       localStorage.setItem('username', usernameInput);
       setToken(access_token);

@@ -21,19 +21,6 @@ api.interceptors.request.use(
     const token = localStorage.getItem('access_token');
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
-
-      // ✅ Demo-visible log — shows in browser DevTools console
-      console.log(
-        '%c[JWT → Request]',
-        'background:#00d4ff;color:#050b14;font-weight:bold;padding:2px 6px;border-radius:4px',
-        {
-          url:    config.baseURL + config.url,
-          method: config.method?.toUpperCase(),
-          token:  token.substring(0, 60) + '…',
-        }
-      );
-    } else {
-      console.warn('[JWT] No token found in localStorage — request is unauthenticated.');
     }
     return config;
   },
