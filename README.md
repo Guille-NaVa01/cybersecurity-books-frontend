@@ -38,7 +38,7 @@ npm run dev
 
 La app corre en **http://localhost:5173**.
 
-## Variables de entorno (`.env`)
+## Variables de entorno (`.env`) tener en cuenta
 
 ```env
 VITE_KEYCLOAK_URL=http://localhost:8081
